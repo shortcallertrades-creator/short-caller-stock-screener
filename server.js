@@ -6,25 +6,41 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Determine the correct root path (works in both local and Vercel environments)
+const rootPath = process.env.VERCEL ? '/var/task' : __dirname;
+
 // Middleware
 app.use(express.json());
 
-// Serve static files with correct MIME types
-app.use(express.static(path.join(__dirname, '.'), {
-  setHeaders: (res, path) => {
-    if (path.endsWith('.css')) {
+// Serve CSS with proper MIME type
+app.get('/styles.css', (req, res) => {
+  res.setHeader('Content-Type', 'text/css; charset=utf-8');
+  res.sendFile(path.join(rootPath, 'styles.css'));
+});
+
+// Serve JavaScript with proper MIME type
+app.get('/script.js', (req, res) => {
+  res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
+  res.sendFile(path.join(rootPath, 'script.js'));
+});
+
+// Serve other static files (JSON, charts, etc.)
+app.use(express.static(rootPath, {
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.css')) {
       res.setHeader('Content-Type', 'text/css; charset=utf-8');
-    } else if (path.endsWith('.js')) {
+    } else if (filePath.endsWith('.js')) {
       res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
-    } else if (path.endsWith('.json')) {
+    } else if (filePath.endsWith('.json')) {
       res.setHeader('Content-Type', 'application/json; charset=utf-8');
     }
   }
 }));
 
-// Serve index.html
+// Serve index.html for root route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.sendFile(path.join(rootPath, 'index.html'));
 });
 
 // TikTok OAuth callback endpoint
@@ -42,7 +58,7 @@ app.get('/tiktok-callback', (req, res) => {
   // For now, save it for manual processing
   const timestamp = new Date().toISOString();
   const logEntry = `[${timestamp}] TikTok Auth Code: ${code}\n`;
-  fs.appendFileSync(path.join(__dirname, 'tiktok_auth.log'), logEntry);
+  fs.appendFileSync(path.join(rootPath, 'tiktok_auth.log'), logEntry);
 
   res.json({
     success: true,
@@ -54,7 +70,7 @@ app.get('/tiktok-callback', (req, res) => {
 // API endpoint to get ticker data
 app.get('/api/tickers', (req, res) => {
   try {
-    const tickerData = JSON.parse(fs.readFileSync(path.join(__dirname, 'ticker_data.json'), 'utf8'));
+    const tickerData = JSON.parse(fs.readFileSync(path.join(rootPath, 'ticker_data.json'), 'utf8'));
     res.json(tickerData);
   } catch (error) {
     res.status(500).json({ error: 'Failed to load ticker data' });
@@ -64,7 +80,7 @@ app.get('/api/tickers', (req, res) => {
 // API endpoint to get posted tickers
 app.get('/api/posted', (req, res) => {
   try {
-    const posted = JSON.parse(fs.readFileSync(path.join(__dirname, 'posted_tickers.json'), 'utf8'));
+    const posted = JSON.parse(fs.readFileSync(path.join(rootPath, 'posted_tickers.json'), 'utf8'));
     res.json(posted);
   } catch (error) {
     res.json([]); // Return empty array if file doesn't exist
@@ -85,7 +101,7 @@ app.get('/api/daily-update', (req, res) => {
   console.log('\n🔄 Scheduled update triggered...');
   const { exec } = require('child_process');
   
-  exec('node update_charts.js', (err, stdout, stderr) => {
+  exec(`node ${path.join(rootPath, 'update_charts.js')}`, { cwd: rootPath }, (err, stdout, stderr) => {
     if (err) {
       console.error('❌ Update failed:', err);
       return res.status(500).json({ 
@@ -102,9 +118,10 @@ app.get('/api/daily-update', (req, res) => {
   });
 });
 
-// 404 handler
+// 404 handler - serve index.html
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.sendFile(path.join(rootPath, 'index.html'));
 });
 
 app.listen(PORT, () => {
