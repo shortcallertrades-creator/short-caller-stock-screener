@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finviz Screener Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Short Caller Stock Ideas</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="features" class="section">
+        <h2>Features</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Live Screener Feed</h3>
+            <p>Automatic Finviz screener results rendered as split layout cards for every ticker.</p>
+          </article>
+          <article class="card">
+            <h3>Dark Dashboard</h3>
+            <p>A modern dark theme optimized for financial chart presentation.</p>
+          </article>
+          <article class="card">
+            <h3>Chart Annotations</h3>
+            <p>Price markers, target levels, and rating summaries are shown on the chart cards.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <h2>Dashboard Split Layout</h2>
+        <p>This split panel layout puts the chart on the left and the analysis details on the right.</p>
+        <div class="split-card single-split-card">
+          <div class="split-chart">
+            <div class="chart-frame">
+              <img src="https://finviz.com/chart.ashx?t=AAPL&ty=c&ta=1&p=d&s=l" alt="AAPL chart" />
+            </div>
+          </div>
+          <div class="split-panel">
+            <div class="panel-header">
+              <h3>AAPL</h3>
+              <span class="rating-tag">2 ratings</span>
+            </div>
+            <div class="chart-info vertical">
+              <div class="metric-pill target-pill">Target: <span>$220</span></div>
+              <div class="metric-pill change-pill">Change: <span>+3.2%</span></div>
+              <div class="metric-pill current-pill">Current: <span>$210</span></div>
+            </div>
+            <div class="ratings-wrap split-ratings">
+              <table class="ratings-table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Analyst</th>
+                    <th>Action</th>
+                    <th>Price Target</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Apr 01</td>
+                    <td>Goldman Sachs</td>
+                    <td>Maintain</td>
+                    <td>+5%</td>
+                  </tr>
+                  <tr>
+                    <td>Mar 24</td>
+                    <td>Morgan Stanley</td>
+                    <td>Upgrade</td>
+                    <td>+12%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- screener-charts-section-start -->
+      <section class="section">
+        <h2>Stock Charts from Screener</h2>
+        <p>Live screener feed updated hourly</p>
+        <div class="screener-grid" id="screener-charts">
+          <div class="vertical-card">
+              <div class="card-header">
+                <h3>AAPL</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">5 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=AAPL&ty=c&ta=1&p=d&s=l" alt="AAPL" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$315.00</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$253.50</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td>Jan-30-26</td><td>Maxim Group</td><td>Upgrade</td><td>$300</td></tr><tr><td>Jan-30-26</td><td>Rosenblatt</td><td>Reiterated</td><td>$250 &rarr; $267</td></tr><tr><td>Jan-30-26</td><td>Monness Crespi &amp; Hardt</td><td>Reiterated</td><td>$300 &rarr; $315</td></tr><tr><td>Jan-30-26</td><td>JP Morgan</td><td>Reiterated</td><td>$315 &rarr; $325</td></tr><tr><td>Jan-30-26</td><td>Barclays</td><td>Reiterated</td><td>$230 &rarr; $239</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>AEHR</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">1 rating</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=AEHR&ty=c&ta=1&p=d&s=l" alt="AEHR" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$50.25</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td>Mar-02-26</td><td>William Blair</td><td>Upgrade</td><td>—</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>AGEN</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=AGEN&ty=c&ta=1&p=d&s=l" alt="AGEN" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$4.06</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>APLS</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">1 rating</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=APLS&ty=c&ta=1&p=d&s=l" alt="APLS" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$28.00</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$40.70</span></div>
+                <div class="metric-pill status-pill">Price target reached</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td>Jan-21-26</td><td>BofA Securities</td><td>Upgrade</td><td>$28</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>BETR</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=BETR&ty=c&ta=1&p=d&s=l" alt="BETR" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$44.84</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>BMEA</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=BMEA&ty=c&ta=1&p=d&s=l" alt="BMEA" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$1.90</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>CENX</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=CENX&ty=c&ta=1&p=d&s=l" alt="CENX" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$66.03</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>ELVN</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=ELVN&ty=c&ta=1&p=d&s=l" alt="ELVN" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$43.16</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>FMC</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=FMC&ty=c&ta=1&p=d&s=l" alt="FMC" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$17.64</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>GLNG</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=GLNG&ty=c&ta=1&p=d&s=l" alt="GLNG" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$54.44</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>HOG</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=HOG&ty=c&ta=1&p=d&s=l" alt="HOG" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$21.18</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>HTZ</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=HTZ&ty=c&ta=1&p=d&s=l" alt="HTZ" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$5.88</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>LGVN</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=LGVN&ty=c&ta=1&p=d&s=l" alt="LGVN" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$1.16</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>LOVE</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=LOVE&ty=c&ta=1&p=d&s=l" alt="LOVE" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$15.44</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>MPLT</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=MPLT&ty=c&ta=1&p=d&s=l" alt="MPLT" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$24.14</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>NEXT</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=NEXT&ty=c&ta=1&p=d&s=l" alt="NEXT" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$8.74</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>PROP</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=PROP&ty=c&ta=1&p=d&s=l" alt="PROP" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$2.50</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>SLNO</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=SLNO&ty=c&ta=1&p=d&s=l" alt="SLNO" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$52.35</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>STAA</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">0 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=STAA&ty=c&ta=1&p=d&s=l" alt="STAA" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$N/A</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$21.09</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td colspan="4" class="no-ratings">No ratings found</td></tr></tbody>
+                </table>
+              </div>
+            </div><div class="vertical-card">
+              <div class="card-header">
+                <h3>WLK</h3>
+                <div class="panel-labels">
+                  <span class="rating-tag">3 ratings</span>
+                  <span class="badge-pill new">New today</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <div class="chart-frame">
+                  <img src="https://finviz.com/chart.ashx?t=WLK&ty=c&ta=1&p=d&s=l" alt="WLK" />
+                </div>
+              </div>
+              <div class="metrics-section">
+                <div class="metric-pill target-pill">🎯 Target: <span>$127.00</span></div>
+                <div class="metric-pill change-pill">📈 Change: <span>N/A</span></div>
+                <div class="metric-pill current-pill">💰 Current: <span>$123.39</span></div>
+                <div class="metric-pill status-pill">Tracking</div>
+              </div>
+              <div class="ratings-section">
+                <table class="ratings-table">
+                  <thead><tr><th>Date</th><th>Analyst</th><th>Action</th><th>Price Target</th></tr></thead>
+                  <tbody><tr><td>Apr-06-26</td><td>BofA Securities</td><td>Downgrade</td><td>$119</td></tr><tr><td>Mar-05-26</td><td>BMO Capital Markets</td><td>Upgrade</td><td>$127</td></tr><tr><td>Feb-09-26</td><td>Mizuho</td><td>Downgrade</td><td>$88</td></tr></tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- screener-charts-section-end -->      
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026  Short Caller Stocks trading</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

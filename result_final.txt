@@ -1,0 +1,206 @@
+
+[2026-04-08T11:42:26.658Z] DEPLOYMENT START
+Posted file path: C:\Users\Dell\New folder\posted_tickers.json
+Ticker data file path: C:\Users\Dell\New folder\ticker_data.json
+
+=== DEPLOYMENT START ===
+
+Loading posted tickers...
+Loaded 20 previously posted tickers
+Fetching tickers...
+  Fetching: https://finviz.com/screener.ashx?v=211&f=sh_short_o10,ta_highlow50d_nh&ft=3&o=high52w
+  ??? Fetched 133460 bytes
+??? Found 12 tickers
+Loading ticker data from file...
+Loaded data for 20 tickers
+
+Updating HTML...
+Loading ticker data from file...
+Loaded data for 20 tickers
+Processing 0 new tickers...
+Updating all 20 tickers...
+Fetching AAPL...
+  Fetching: https://finviz.com/quote.ashx?t=AAPL
+  ??? Fetched 236975 bytes
+    ??? Found 5 analyst ratings
+    ??? Price: $253.50
+  ??? AAPL: $253.50 target=$315.00
+Fetching AEHR...
+  Fetching: https://finviz.com/quote.ashx?t=AEHR
+  ??? Fetched 228053 bytes
+    ??? Found 1 analyst ratings
+    ??? Price: $50.25
+  ??? AEHR: $50.25 target=$N/A
+Fetching AGEN...
+  Fetching: https://finviz.com/quote.ashx?t=AGEN
+  ??? Fetched 209386 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $4.06
+  ??? AGEN: $4.06 target=$N/A
+Fetching APLS...
+  Fetching: https://finviz.com/quote.ashx?t=APLS
+  ??? Fetched 281807 bytes
+    ??? Found 1 analyst ratings
+    ??? Price: $40.70
+  ??? APLS: $40.70 target=$28.00
+Fetching BETR...
+  Fetching: https://finviz.com/quote.ashx?t=BETR
+  ??? Fetched 267049 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $44.84
+  ??? BETR: $44.84 target=$N/A
+Fetching BMEA...
+  Fetching: https://finviz.com/quote.ashx?t=BMEA
+  ??? Fetched 228138 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $1.90
+  ??? BMEA: $1.90 target=$N/A
+Fetching CENX...
+  Fetching: https://finviz.com/quote.ashx?t=CENX
+  ??? Fetched 232184 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $66.03
+  ??? CENX: $66.03 target=$N/A
+Fetching ELVN...
+  Fetching: https://finviz.com/quote.ashx?t=ELVN
+  ??? Fetched 247131 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $43.16
+  ??? ELVN: $43.16 target=$N/A
+Fetching FMC...
+  Fetching: https://finviz.com/quote.ashx?t=FMC
+  ??? Fetched 218924 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $17.64
+  ??? FMC: $17.64 target=$N/A
+Fetching GLNG...
+  Fetching: https://finviz.com/quote.ashx?t=GLNG
+  ??? Fetched 212174 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $54.44
+  ??? GLNG: $54.44 target=$N/A
+Fetching HOG...
+  Fetching: https://finviz.com/quote.ashx?t=HOG
+  ??? Fetched 236264 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $21.18
+  ??? HOG: $21.18 target=$N/A
+Fetching HTZ...
+  Fetching: https://finviz.com/quote.ashx?t=HTZ
+  ??? Fetched 213771 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $5.88
+  ??? HTZ: $5.88 target=$N/A
+Fetching LGVN...
+  Fetching: https://finviz.com/quote.ashx?t=LGVN
+  ??? Fetched 220701 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $1.16
+  ??? LGVN: $1.16 target=$N/A
+Fetching LOVE...
+  Fetching: https://finviz.com/quote.ashx?t=LOVE
+  ??? Fetched 212967 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $15.44
+  ??? LOVE: $15.44 target=$N/A
+Fetching MPLT...
+  Fetching: https://finviz.com/quote.ashx?t=MPLT
+  ??? Fetched 123369 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $24.14
+  ??? MPLT: $24.14 target=$N/A
+Fetching NEXT...
+  Fetching: https://finviz.com/quote.ashx?t=NEXT
+  ??? Fetched 233177 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $8.74
+  ??? NEXT: $8.74 target=$N/A
+Fetching PROP...
+  Fetching: https://finviz.com/quote.ashx?t=PROP
+  ??? Fetched 234998 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $2.50
+  ??? PROP: $2.50 target=$N/A
+Fetching SLNO...
+  Fetching: https://finviz.com/quote.ashx?t=SLNO
+  ??? Fetched 219295 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $52.35
+  ??? SLNO: $52.35 target=$N/A
+Fetching STAA...
+  Fetching: https://finviz.com/quote.ashx?t=STAA
+  ??? Fetched 224129 bytes
+    ??? Found 0 analyst ratings
+    ??? Price: $21.09
+  ??? STAA: $21.09 target=$N/A
+Fetching WLK...
+  Fetching: https://finviz.com/quote.ashx?t=WLK
+  ??? Fetched 228620 bytes
+    ??? Found 3 analyst ratings
+    ??? Price: $123.39
+  ??? WLK: $123.39 target=$127.00
+Generating 20 chart blocks...
+Generating chart for AAPL...
+Generating chart for AEHR...
+Generating chart for AGEN...
+Generating chart for APLS...
+Generating chart for BETR...
+Generating chart for BMEA...
+Generating chart for CENX...
+Generating chart for ELVN...
+Generating chart for FMC...
+Generating chart for GLNG...
+Generating chart for HOG...
+Generating chart for HTZ...
+Generating chart for LGVN...
+Generating chart for LOVE...
+Generating chart for MPLT...
+Generating chart for NEXT...
+Generating chart for PROP...
+Generating chart for SLNO...
+Generating chart for STAA...
+Generating chart for WLK...
+  Fetching image: https://finviz.com/chart.ashx?t=AAPL&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=AEHR&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=AGEN&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=APLS&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=BETR&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=BMEA&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=CENX&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=ELVN&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=FMC&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=GLNG&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=HOG&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=HTZ&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=LGVN&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=LOVE&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=MPLT&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=NEXT&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=PROP&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=SLNO&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=STAA&ty=c&ta=1&p=d&s=l
+  Fetching image: https://finviz.com/chart.ashx?t=WLK&ty=c&ta=1&p=d&s=l
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+  Warning: Using original chart
+Saving ticker data for 20 tickers...
+Ticker data saved successfully
+????????? SUCCESS: 20 tickers deployed ?????????
+

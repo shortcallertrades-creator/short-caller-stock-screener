@@ -1,0 +1,48 @@
+Fetching AAPL from Finviz...
+
+=== MATCH 1 ===
+<div class="quote-header_right js-quote-price-static">
+            <div class="quote-price">
+        <div class="sr-only">Last Close</div>
+          <span class="quote-price_date flex items-center">
+      Apr 07
+      <span class="text-muted-3">&nbsp;???&nbsp;</span> 04:00PM ET
+  </span>
+        <div class="quote-price_wrapper">
+            <strong class="quote-price_wrapper_price">253.50</s
+...
+
+=== MATCH 2 ===
+<div class="quote-price_wrapper_change">
+        <div class="table w-full">
+            <span class="table-row w-full items-baseline justify-end whitespace-nowrap text-muted-2 text-negative">
+                <span><div class="sr-only">Dollar change</div>-5.36</span>
+                <span class="table-cell align-middle w-0 text-center pl-px">
+                    <svg width="12" height="12" cla
+...
+
+=== MATCH 3 ===
+<div class="js-quote-price-root quote-header_right hidden"></div>
+        </div>
+        <div class="quote-links whitespace-nowrap gap-8">
+            <div class="flex space-x-0.5 overflow-hidden">
+                <a href="screener.ashx?v=111&f=sec_technology" class="tab-link">Technology</a>
+                <span class="text-muted-3">???</span>
+                <a href="screener.ashx?v=111&f=in
+...
+
+
+=== Price-like numbers ===
+  $253.50
+  $32.07
+  $27.30
+  $42.26
+  $55.62
+
+
+=== Quote price content ===
+class="quote-price">
+        <div class="sr-only">Last Close</div>
+          <span class="quote-price_date flex items-center">
+      Apr 07
+      <span class="text-muted-3">&nbsp;???&nbsp;</span> 04:00

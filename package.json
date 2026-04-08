@@ -1,0 +1,21 @@
+{
+  "name": "my-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "sharp": "^0.33.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "npx http-server . -c-1 -o",
+    "update-charts": "node update_charts.js",
+    "daily-update": "npm run update-charts",
+    "build": "echo 'No build step needed for this static site.'"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

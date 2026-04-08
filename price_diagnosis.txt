@@ -1,0 +1,48 @@
+Fetching AAPL from Finviz...
+
+HTML length: 236975 bytes
+
+Found "quote" patterns:
+  Quote</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=1024"><meta name="descripti
+  quote.ashx?t=AAPL">
+<script async=true>
+    !(function(q,_name){q[_name]=q[_name]||function k(){(k.
+  quoteSearchExt: '',
+                isJoinBannerVisible: false,
+                hasKnowledgeBase: 
+  quote-shared-wrapper"><link rel="preload" as="script" href="/assets/dist-legacy/9864.v1.a6b77c55.js"
+  quote-shared-wrapper"><link rel="preload" as="script" href="/assets/dist-legacy/6195.v1.a75e7f3f.js"
+
+Searching for prices:
+  Pattern 0: Found 6 matches
+    - class="quote-header_right js-quote-price-static">
+            <
+    - class="quote-price">
+        <
+    - class="quote-price_date flex items-center">
+      Apr 07
+      <
+  Pattern 1: Found 99 matches
+    - $300
+    - $250
+    - $267
+  Pattern 2: Found 167 matches
+    - <td class="snapshot-td2 cursor-pointer w-[7%]" align="left" data-boxover-html="D
+    - <td class="snapshot-td2 cursor-pointer w-[7%]" align="left" data-boxover-html="D
+    - <td width="130" align="right">
+            02
+  Pattern 3: Found 6 matches
+    - quote-price-static">
+            <
+    - quote-price">
+        <
+    - quote-price_date flex items-center">
+      Apr 07
+      <
+
+Context around AAPL:
+AAPL - Apple Inc Stock Price and Quote</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=1024"><meta name="description" content="AAPL - Apple Inc - Stock screener for investors and traders, financial visualizations.">
+
+            <link rel="preload" href="/fonts/ibm-plex-sans-lati

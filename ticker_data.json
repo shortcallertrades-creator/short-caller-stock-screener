@@ -1,0 +1,256 @@
+{
+  "AAPL": {
+    "initialPrice": null,
+    "targetPrice": 315,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [
+      {
+        "timestamp": 1769749200,
+        "date": "Jan-30-26",
+        "action": "Upgrade",
+        "analyst": "Maxim Group",
+        "priceTargetChange": "$300"
+      },
+      {
+        "timestamp": 1769749200,
+        "date": "Jan-30-26",
+        "action": "Reiterated",
+        "analyst": "Rosenblatt",
+        "priceTargetChange": "$250 &rarr; $267"
+      },
+      {
+        "timestamp": 1769749200,
+        "date": "Jan-30-26",
+        "action": "Reiterated",
+        "analyst": "Monness Crespi &amp; Hardt",
+        "priceTargetChange": "$300 &rarr; $315"
+      },
+      {
+        "timestamp": 1769749200,
+        "date": "Jan-30-26",
+        "action": "Reiterated",
+        "analyst": "JP Morgan",
+        "priceTargetChange": "$315 &rarr; $325"
+      },
+      {
+        "timestamp": 1769749200,
+        "date": "Jan-30-26",
+        "action": "Reiterated",
+        "analyst": "Barclays",
+        "priceTargetChange": "$230 &rarr; $239"
+      }
+    ],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 253.5
+  },
+  "FMC": {
+    "initialPrice": null,
+    "targetPrice": null,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 17.64
+  },
+  "BETR": {
+    "initialPrice": null,
+    "targetPrice": null,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 44.84
+  },
+  "HTZ": {
+    "initialPrice": null,
+    "targetPrice": null,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 5.88
+  },
+  "STAA": {
+    "initialPrice": null,
+    "targetPrice": null,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 21.09
+  },
+  "NEXT": {
+    "initialPrice": null,
+    "targetPrice": null,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 8.74
+  },
+  "AEHR": {
+    "initialPrice": null,
+    "targetPrice": null,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [
+      {
+        "timestamp": 1772427600,
+        "date": "Mar-02-26",
+        "action": "Upgrade",
+        "analyst": "William Blair",
+        "priceTargetChange": "—"
+      }
+    ],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 50.25
+  },
+  "MPLT": {
+    "initialPrice": null,
+    "targetPrice": null,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 24.14
+  },
+  "APLS": {
+    "initialPrice": null,
+    "targetPrice": 28,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [
+      {
+        "timestamp": 1768971600,
+        "date": "Jan-21-26",
+        "action": "Upgrade",
+        "analyst": "BofA Securities",
+        "priceTargetChange": "$28"
+      }
+    ],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 40.7
+  },
+  "GLNG": {
+    "initialPrice": null,
+    "targetPrice": null,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 54.44
+  },
+  "WLK": {
+    "initialPrice": null,
+    "targetPrice": 127,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [
+      {
+        "timestamp": 1775448000,
+        "date": "Apr-06-26",
+        "action": "Downgrade",
+        "analyst": "BofA Securities",
+        "priceTargetChange": "$119"
+      },
+      {
+        "timestamp": 1772686800,
+        "date": "Mar-05-26",
+        "action": "Upgrade",
+        "analyst": "BMO Capital Markets",
+        "priceTargetChange": "$127"
+      },
+      {
+        "timestamp": 1770613200,
+        "date": "Feb-09-26",
+        "action": "Downgrade",
+        "analyst": "Mizuho",
+        "priceTargetChange": "$88"
+      }
+    ],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 123.39
+  },
+  "ELVN": {
+    "initialPrice": null,
+    "targetPrice": null,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 43.16
+  },
+  "CENX": {
+    "initialPrice": null,
+    "targetPrice": null,
+    "postDate": "Tue Apr 07 2026",
+    "ratings": [],
+    "lastUpdate": "Wed Apr 08 2026",
+    "firstPostDate": "Wed Apr 08 2026",
+    "currentPrice": 66.03
+  },
+  "PROP": {
+    "initialPrice": null,
+    "currentPrice": 2.5,
+    "targetPrice": null,
+    "ratings": [],
+    "firstPostDate": "Wed Apr 08 2026",
+    "lastUpdate": "Wed Apr 08 2026",
+    "status": "active"
+  },
+  "AGEN": {
+    "initialPrice": null,
+    "currentPrice": 4.06,
+    "targetPrice": null,
+    "ratings": [],
+    "firstPostDate": "Wed Apr 08 2026",
+    "lastUpdate": "Wed Apr 08 2026",
+    "status": "active"
+  },
+  "SLNO": {
+    "initialPrice": null,
+    "currentPrice": 52.35,
+    "targetPrice": null,
+    "ratings": [],
+    "firstPostDate": "Wed Apr 08 2026",
+    "lastUpdate": "Wed Apr 08 2026",
+    "status": "active"
+  },
+  "BMEA": {
+    "initialPrice": null,
+    "currentPrice": 1.9,
+    "targetPrice": null,
+    "ratings": [],
+    "firstPostDate": "Wed Apr 08 2026",
+    "lastUpdate": "Wed Apr 08 2026",
+    "status": "active"
+  },
+  "LGVN": {
+    "initialPrice": null,
+    "currentPrice": 1.16,
+    "targetPrice": null,
+    "ratings": [],
+    "firstPostDate": "Wed Apr 08 2026",
+    "lastUpdate": "Wed Apr 08 2026",
+    "status": "active"
+  },
+  "HOG": {
+    "initialPrice": null,
+    "currentPrice": 21.18,
+    "targetPrice": null,
+    "ratings": [],
+    "firstPostDate": "Wed Apr 08 2026",
+    "lastUpdate": "Wed Apr 08 2026",
+    "status": "active"
+  },
+  "LOVE": {
+    "initialPrice": null,
+    "currentPrice": 15.44,
+    "targetPrice": null,
+    "ratings": [],
+    "firstPostDate": "Wed Apr 08 2026",
+    "lastUpdate": "Wed Apr 08 2026",
+    "status": "active"
+  }
+}
