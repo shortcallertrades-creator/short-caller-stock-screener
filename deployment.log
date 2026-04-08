@@ -48,3 +48,27 @@ Found 12 ticker matches
 
 [2026-04-08T11:54:15.420Z] DEPLOYMENT COMPLETE
 
+
+[2026-04-08T13:18:15.162Z] DEPLOYMENT START
+Posted file path: C:\Users\Dell\New folder\posted_tickers.json
+Ticker data file path: C:\Users\Dell\New folder\ticker_data.json
+Screener URL: https://finviz.com/screener.ashx?v=211&f=sh_short_o10,ta_highlow50d_nh&ft=3&o=high52w
+
+=== DEPLOYMENT START ===
+
+Loading posted tickers...
+Loaded 20 previously posted tickers
+Fetching tickers from screener...
+ERROR fetching tickers: Request timeout
+  Stack: Error: Request timeout
+    at ClientRequest.<anonymous> (C:\Users\Dell\New folder\update_charts.js:100:14)
+    at ClientRequest.emit (node:events:508:28)
+    at TLSSocket.emitRequestTimeout (node:_http_client:927:9)
+    at Object.onceWrapper (node:events:622:28)
+    at TLSSocket.emit (node:events:520:35)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+
+[2026-04-08T13:18:37.622Z] DEPLOYMENT COMPLETE
+

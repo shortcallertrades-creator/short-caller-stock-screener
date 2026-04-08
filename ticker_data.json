@@ -91,9 +91,16 @@
   },
   "AEHR": {
     "initialPrice": null,
-    "targetPrice": null,
+    "targetPrice": 68,
     "postDate": "Tue Apr 07 2026",
     "ratings": [
+      {
+        "timestamp": 1775620800,
+        "date": "Apr-08-26",
+        "action": "Upgrade",
+        "analyst": "Craig Hallum",
+        "priceTargetChange": "$68"
+      },
       {
         "timestamp": 1772427600,
         "date": "Mar-02-26",
