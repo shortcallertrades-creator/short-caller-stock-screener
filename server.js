@@ -24,6 +24,12 @@ app.get('/script.js', (req, res) => {
   res.sendFile(path.join(rootPath, 'script.js'));
 });
 
+// Serve TikTok verification file
+app.get('/tiktok9sVVNp21GuV2bLOYtfdiubN30qj0kv2P.txt', (req, res) => {
+  res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+  res.sendFile(path.join(rootPath, 'tiktok9sVVNp21GuV2bLOYtfdiubN30qj0kv2P.txt'));
+});
+
 // Serve other static files (JSON, charts, etc.)
 app.use(express.static(rootPath, {
   setHeaders: (res, filePath) => {
@@ -118,8 +124,14 @@ app.get('/api/daily-update', (req, res) => {
   });
 });
 
-// 404 handler - serve index.html
+// 404 handler - only serve index.html for HTML requests
 app.use((req, res) => {
+  // If request is for a file with extension (not found), return 404 instead of index.html
+  if (req.path.includes('.')) {
+    return res.status(404).send('Not Found');
+  }
+  
+  // Otherwise serve index.html for SPA routing
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   res.sendFile(path.join(rootPath, 'index.html'));
 });
